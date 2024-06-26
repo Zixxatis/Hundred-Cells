@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d08a470beb17c2e47ad8329a370fd8d4, type: 3}
+  m_Name: Classic CC
+  m_EditorClassIdentifier: 
+  <ColorsCollectionType>k__BackingField: 0
+  <TitleLK>k__BackingField:
+    <LocalizationKey>k__BackingField: Collection_Classic
+  <Price>k__BackingField: 0
+  <UsesLightTheme>k__BackingField: 0
+  <BackgroundColor>k__BackingField:
+    serializedVersion: 2
+    rgba: 4279900698
+  <BackgroundPatternColor>k__BackingField:
+    serializedVersion: 2
+    rgba: 452984831
+  cellColorsPairList:
+  - <CellColor>k__BackingField: 0
+    <Color32>k__BackingField:
+      serializedVersion: 2
+      rgba: 2152549709
+  - <CellColor>k__BackingField: 1
+    <Color32>k__BackingField:
+      serializedVersion: 2
+      rgba: 4282131885
+  - <CellColor>k__BackingField: 2
+    <Color32>k__BackingField:
+      serializedVersion: 2
+      rgba: 4281099479
+  - <CellColor>k__BackingField: 3
+    <Color32>k__BackingField:
+      serializedVersion: 2
+      rgba: 4281509350
+  - <CellColor>k__BackingField: 4
+    <Color32>k__BackingField:
+      serializedVersion: 2
+      rgba: 4286099265
+  - <CellColor>k__BackingField: 5
+    <Color32>k__BackingField:
+      serializedVersion: 2
+      rgba: 4290014790
+  - <CellColor>k__BackingField: 6
+    <Color32>k__BackingField:
+      serializedVersion: 2
+      rgba: 4286729336

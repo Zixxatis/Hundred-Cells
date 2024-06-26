@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2040a34176d967741832f58b3e9b79bb, type: 3}
+  m_Name: 1. Common Bundle
+  m_EditorClassIdentifier: 
+  <TitleLK>k__BackingField:
+    <LocalizationKey>k__BackingField: Bundle_Common
+  <BundleRarity>k__BackingField: 0
+  <Icon>k__BackingField: {fileID: 21300000, guid: 55434c74c6cc2ec498d7309c6796f759, type: 3}
+  <BorderColor>k__BackingField:
+    serializedVersion: 2
+    rgba: 4288256409
+  <BackgroundColor>k__BackingField:
+    serializedVersion: 2
+    rgba: 4286611584
+  <CoinsAmount>k__BackingField: 100
+  <BonusAmount>k__BackingField: 0
+  <IsDisablingAds>k__BackingField: 0
+  <PriceInUSD>k__BackingField: 0.99

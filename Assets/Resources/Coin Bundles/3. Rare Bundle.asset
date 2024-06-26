@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2040a34176d967741832f58b3e9b79bb, type: 3}
+  m_Name: 3. Rare Bundle
+  m_EditorClassIdentifier: 
+  <TitleLK>k__BackingField:
+    <LocalizationKey>k__BackingField: Bundle_Rare
+  <BundleRarity>k__BackingField: 2
+  <Icon>k__BackingField: {fileID: 21300000, guid: c89e90f58c540474e979282a0d5b3535, type: 3}
+  <BorderColor>k__BackingField:
+    serializedVersion: 2
+    rgba: 4293684005
+  <BackgroundColor>k__BackingField:
+    serializedVersion: 2
+    rgba: 4288434469
+  <CoinsAmount>k__BackingField: 350
+  <BonusAmount>k__BackingField: 35
+  <IsDisablingAds>k__BackingField: 1
+  <PriceInUSD>k__BackingField: 3.49

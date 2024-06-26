@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d08a470beb17c2e47ad8329a370fd8d4, type: 3}
+  m_Name: Bright Night CC
+  m_EditorClassIdentifier: 
+  <ColorsCollectionType>k__BackingField: 3
+  <TitleLK>k__BackingField:
+    <LocalizationKey>k__BackingField: Collection_BrightNight
+  <Price>k__BackingField: 10
+  <UsesLightTheme>k__BackingField: 0
+  <BackgroundColor>k__BackingField:
+    serializedVersion: 2
+    rgba: 4279895808
+  <BackgroundPatternColor>k__BackingField:
+    serializedVersion: 2
+    rgba: 452962816
+  cellColorsPairList:
+  - <CellColor>k__BackingField: 0
+    <Color32>k__BackingField:
+      serializedVersion: 2
+      rgba: 2571121197
+  - <CellColor>k__BackingField: 1
+    <Color32>k__BackingField:
+      serializedVersion: 2
+      rgba: 4285482991
+  - <CellColor>k__BackingField: 2
+    <Color32>k__BackingField:
+      serializedVersion: 2
+      rgba: 4282938106
+  - <CellColor>k__BackingField: 3
+    <Color32>k__BackingField:
+      serializedVersion: 2
+      rgba: 4284928511
+  - <CellColor>k__BackingField: 4
+    <Color32>k__BackingField:
+      serializedVersion: 2
+      rgba: 4288730630
+  - <CellColor>k__BackingField: 5
+    <Color32>k__BackingField:
+      serializedVersion: 2
+      rgba: 4289890833
+  - <CellColor>k__BackingField: 6
+    <Color32>k__BackingField:
+      serializedVersion: 2
+      rgba: 4291903107
