@@ -1,5 +1,4 @@
-# Hundred Cells
-<img src="https://github.com/Zixxatis/Hundred-Cells/blob/main/.github/banner.gif" alt="banner">
+<img src="https://github.com/Zixxatis/Hundred-Cells/blob/main/.github/banner-hc.gif" alt="banner">
 
 <p align="center">
    <img src="https://img.shields.io/badge/Engine-Unity%202022.3.30f1-blueviolet?style=&logo=unity" alt="Engine">
@@ -12,11 +11,11 @@
 ## Table of Contents
 * [About](#About)
 * [Features](#features)
-	* [[#Project Systems]]
-	* [[#Design Patterns Used]]
-	* [[#Optimization for Mobiles]]
-	* [[#Custom Editor Scripts]]
-	* [[#Extensions]]
+	* [Project Systems](#project-systems)
+	* [Design Patterns Used](#design-patterns-used)
+	* [Optimization for Mobiles](#optimization-for-mobiles)
+	* [Custom Editor Scripts](#custom-editor-scripts)
+	* [Extensions](#extensions)
 - [Screenshots](#Screenshots)
 - [License](#License)
 - [Contact](#Contact)
