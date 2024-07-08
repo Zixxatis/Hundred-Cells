@@ -14,12 +14,12 @@ namespace CGames
         private void Construct(CollectionsInventory collectionsInventory)
         {
             this.CollectionsInventory = collectionsInventory;
+            Graphic = GetComponent<Graphic>();
         }
 
         protected virtual void Awake()
         {
             CollectionsInventory.OnCollectionChanged += UpdateColor;
-            Graphic = GetComponent<Graphic>();
         }
 
         protected virtual void Start()

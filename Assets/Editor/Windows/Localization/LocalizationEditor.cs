@@ -31,7 +31,6 @@ namespace CGames.CustomEditors
 
         private Vector2 scrollPosition = Vector2.zero;
         
-
         [MenuItem("Tools/Editor Windows/Localization Editor")]
         public static void Init()
         {
