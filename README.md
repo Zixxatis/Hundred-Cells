@@ -33,7 +33,7 @@ Play WebGL version or download .apk for Android from [itch.io](https://zixxatis.
 
 ## Features
 ### Project Systems
-- [Saving System 2.0](https://github.com/Zixxatis/Hundred-Cells/tree/main/Assets/Scripts/%5BGlobal%20Scripts%5D/Saving%20System) -A storage system designed specifically for use with the DI container. Can be used with any class that implements [Data](https://github.com/Zixxatis/Hundred-Cells/blob/main/Assets/Scripts/%5BGlobal%20Scripts%5D/Data/Data.cs). Allows reading and writing to a JSON file.
+- [Saving System 2.0](https://github.com/Zixxatis/Hundred-Cells/tree/main/Assets/Scripts/%5BGlobal%20Scripts%5D/Saving%20System) - A saving system designed specifically for use with the DI container. Can be used with any class that implements [Data](https://github.com/Zixxatis/Hundred-Cells/blob/main/Assets/Scripts/%5BGlobal%20Scripts%5D/Data/Data.cs). Allows reading and writing to a JSON file. Supports data encryption and decryption. Supports async workflow.
 - [Localization System](https://github.com/Zixxatis/Hundred-Cells/tree/main/Assets/Scripts/%5BGlobal%20Scripts%5D/Localization%20System) - A system that allows to localize a TMP text component in Editor and in the runtime.
 - [Color Adapter](https://github.com/Zixxatis/Hundred-Cells/blob/main/Assets/Scripts/Visual%20Elements/Color%20Adapters/ColorAdapter.cs) - A Graphic extension to match the current color scheme, designed to be used with the DI container.
 
@@ -55,11 +55,13 @@ Play WebGL version or download .apk for Android from [itch.io](https://zixxatis.
 - [Localization Editor](https://github.com/Zixxatis/Hundred-Cells/blob/main/Assets/Editor/Windows/LocalizationEditor.cs) - An editor window, that helps to maintain the localization file and find any references.
 - [Localized Text](https://github.com/Zixxatis/Hundred-Cells/blob/main/Assets/Editor/Inspector%20GUI/TextInputter.cs) Component drawer - Allows to preview localized text in the Editor mode.
 - [GameObject Creator](https://github.com/Zixxatis/Hundred-Cells/tree/main/Assets/Editor/GameObject%20Creation) - A simple factory for creating custom objects from the context menu in Edit mode.
+- [Code Word Generator](https://github.com/Zixxatis/Hundred-Cells/blob/main/Assets/Editor/Windows/CodeGenerationWindow.cs) - A window for generating configurable code word for the saving system.
 
 ### Extensions
 - [General Extensions](https://github.com/Zixxatis/Hundred-Cells/tree/main/Assets/Scripts/%5BExtensions%20%26%20Misc%5D/Extensions) - A collection of various extensions for general C# & Unity classes.
 - Project-specific extensions
 	- [Multidimensional Array Extensions](https://github.com/Zixxatis/Hundred-Cells/blob/main/Assets/Scripts/%5BExtensions%20%26%20Misc%5D/Project%20Specific%20Extensions/MatrixExtensions.cs)
+ - Custom InspectorReadOnlyAttribute - A simple [attribute](https://github.com/Zixxatis/Hundred-Cells/blob/main/Assets/Scripts/%5BGlobal%20Scripts%5D/Attributes/InspectorReadOnlyAttribute.cs) that allows the field value to be displayed, but [prevents](https://github.com/Zixxatis/Hundred-Cells/blob/main/Assets/Editor/Inspector%20GUI/InspectorReadOnlyDrawer.cs) it from being edited in the inspector.
 
 ## Screenshots
 <p align="center">
