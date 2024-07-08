@@ -1,3 +1,5 @@
+using System.Threading.Tasks;
+
 namespace CGames
 {
     public interface ISaver<T> where T : Data
@@ -10,5 +12,8 @@ namespace CGames
 
         /// <summary> Saves data from all scripts in the handling list to the save file. </summary>
         public void SaveData();
+
+        /// <summary> Asynchronously saves data from all scripts in the handling list to the save file. </summary>
+        public Task SaveDataAsync();
     }
 }

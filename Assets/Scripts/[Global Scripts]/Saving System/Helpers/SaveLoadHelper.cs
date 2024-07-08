@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace CGames
 {
-    public static class SavesHelper
+    public static class SaveLoadHelper
     {
         public static List<T> GetCorrectListFromSaveFile<T>(List<T> defaultList, List<T> loadedList)
         {

@@ -27,7 +27,7 @@ namespace CGames
 
         void ISavable<PlayerData>.ReceiveData(PlayerData data)
         {
-            this.bonusesDataList = SavesHelper.GetCorrectListFromSaveFile(GetDefaultBonusesList() , data.BonusesDataList);
+            this.bonusesDataList = SaveLoadHelper.GetCorrectListFromSaveFile(GetDefaultBonusesList() , data.BonusesDataList);
         }
 
         private static List<BonusData> GetDefaultBonusesList()

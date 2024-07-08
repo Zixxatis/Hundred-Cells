@@ -21,7 +21,7 @@ namespace CGames
             Dictionary<GameMode, uint> defaultDictionary = Enum.GetValues(typeof(GameMode)).Cast<GameMode>()
                                                                .ToDictionary(x => x, x => (uint)0);
 
-            return SavesHelper.GetCorrectDictionaryFromSaveFile(defaultDictionary, loadedDictionary);
+            return SaveLoadHelper.GetCorrectDictionaryFromSaveFile(defaultDictionary, loadedDictionary);
         }
 
         public static Dictionary<GameMode, List<LeaderboardRecord>> GetCorrectLeaderboardsDictionary(Dictionary<GameMode, List<LeaderboardRecord>> loadedDictionary)
@@ -29,7 +29,7 @@ namespace CGames
             Dictionary<GameMode, List<LeaderboardRecord>> defaultDictionary = Enum.GetValues(typeof(GameMode)).Cast<GameMode>()
                                                                                   .ToDictionary(x => x, x => GetBaseLeaderboardsList(x));
 
-            return SavesHelper.GetCorrectDictionaryFromSaveFile(defaultDictionary, loadedDictionary);
+            return SaveLoadHelper.GetCorrectDictionaryFromSaveFile(defaultDictionary, loadedDictionary);
         }
 
         private static List<LeaderboardRecord> GetBaseLeaderboardsList(GameMode gameMode)

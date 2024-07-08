@@ -22,7 +22,7 @@ namespace CGames
 
         public void ReceiveData(PlayerData data)
         {
-            collectionsUnlockStatusDictionary = SavesHelper.GetCorrectDictionaryFromSaveFile(GetDefaultCollectionsDictionary() , data.CollectionsUnlockStatusDictionary);
+            collectionsUnlockStatusDictionary = SaveLoadHelper.GetCorrectDictionaryFromSaveFile(GetDefaultCollectionsDictionary() , data.CollectionsUnlockStatusDictionary);
             selectedCollectionType = data.SelectedCollection;
         }
 

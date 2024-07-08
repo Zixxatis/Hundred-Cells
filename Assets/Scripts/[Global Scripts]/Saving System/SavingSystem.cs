@@ -30,10 +30,10 @@ namespace CGames
         {
             return new Dictionary<Type, Action>
             {
-                { typeof(ConfigData), () => configDataSaver.SaveData() },
-                { typeof(PlayerData), () => playerDataSaver.SaveData() },
-                { typeof(SessionData), () => sessionDataSaver.SaveData() },
-                { typeof(RecordsData), () => recordsDataSaver.SaveData() }
+                { typeof(ConfigData), () => configDataSaver.SaveDataAsync() },
+                { typeof(PlayerData), () => playerDataSaver.SaveDataAsync() },
+                { typeof(SessionData), () => sessionDataSaver.SaveDataAsync() },
+                { typeof(RecordsData), () => recordsDataSaver.SaveDataAsync() }
             };
         }
 

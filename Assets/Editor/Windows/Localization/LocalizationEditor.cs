@@ -20,7 +20,7 @@ namespace CGames.CustomEditors
         private List<RowData> dataRows;
         private bool IsDataLoaded => dataRows != null && dataRows.Count > 0;
 
-        private string newLanguageIndex = string.Empty;
+        private string newLanguageName = string.Empty;
         private string newEntryKey = string.Empty;
         private string searchQuery = string.Empty;
         
@@ -102,7 +102,7 @@ namespace CGames.CustomEditors
             EditorGUILayout.BeginHorizontal();
             
             EditorGUILayout.LabelField("Language to add: ", GUILayout.Width(110));
-            newLanguageIndex = EditorGUILayout.TextField(newLanguageIndex);
+            newLanguageName = EditorGUILayout.TextField(newLanguageName);
             
             GUILayout.Space(5);
 
@@ -360,7 +360,7 @@ namespace CGames.CustomEditors
                     }
                 }
 
-                newLanguageIndex = string.Empty;
+                newLanguageName = string.Empty;
                 newEntryKey = string.Empty;
                 searchQuery = string.Empty;
 
@@ -419,20 +419,20 @@ namespace CGames.CustomEditors
 
         private void AddNewLanguage()
         {
-            if(newLanguageIndex == string.Empty)
+            if(newLanguageName == string.Empty)
             {
                 Debug.LogError("Can't add an empty string as a language.");
                 return;
             }
 
-            if(headersRow.cells.Contains(newLanguageIndex))
+            if(headersRow.cells.Contains(newLanguageName))
             {
                 Debug.LogWarning("You already have this language in the list. Skipped it's creation.");
-                newLanguageIndex = string.Empty;
+                newLanguageName = string.Empty;
                 return;
             }
             
-            headersRow.cells.Add(newLanguageIndex);
+            headersRow.cells.Add(newLanguageName);
             
             foreach (RowData row in dataRows)
             {
@@ -441,7 +441,7 @@ namespace CGames.CustomEditors
 
             ForceToSaveFile();
             scrollPosition = new(0, 0);
-            newLanguageIndex = string.Empty;
+            newLanguageName = string.Empty;
         }
 
         private void AddNewEntry()

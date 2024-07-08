@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.IO;
+using System.Threading.Tasks;
 using UnityEngine;
 
 namespace CGames
@@ -13,22 +14,14 @@ namespace CGames
             this.savableScriptsList = savableScriptsList;
         }
 
+        public void OverrideData(T data) => savableScriptsList.ForEach(x => x.ReceiveData(data));
+
         public void LoadData()
         {
             T data = LoadDataFromFile();
             OverrideData(data);
         }
-
-        public void OverrideData(T data) => savableScriptsList.ForEach(x => x.ReceiveData(data));
-
-        public void SaveData()
-        {
-            T data = new();
-            savableScriptsList.ForEach(x => x.PassData(data));
-
-            SaveDataToFile(data);
-        }
-
+        
         private T LoadDataFromFile()
         {
             T data = new();
@@ -52,9 +45,31 @@ namespace CGames
             return new();
         }
 
+        public void SaveData()
+        {
+            T data = new();
+            savableScriptsList.ForEach(x => x.PassData(data));
+
+            SaveDataToFile(data);
+        }
+        
         private void SaveDataToFile(T data)
         {
             SaveFileHandler.Save(data, data.FullPath);
+            Debug.Log($"[{data.LogPrefix}] <color=#E67D12>Saved.</color>");
+        }
+
+        public async Task SaveDataAsync()
+        {
+            T data = new();
+            savableScriptsList.ForEach(x => x.PassData(data));
+
+            await SaveDataToFileAsync(data);
+        }
+
+        private async Task SaveDataToFileAsync(T data)
+        {
+            await SaveFileHandler.SaveAsync(data, data.FullPath);
             Debug.Log($"[{data.LogPrefix}] <color=#E67D12>Saved.</color>");
         }
     }
